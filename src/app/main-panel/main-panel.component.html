@@ -1,1 +1,11 @@
 <p>main-panel works!</p>
+<div *ngFor="let weatherData of weatherData.weather">
+  <h2>Main -> {{ weatherData?.main }}</h2>
+  <h2>id -> {{ weatherData?.id }}</h2>
+  <h2>description -> {{ weatherData?.description }}</h2>
+</div>
+<p>weather location</p>
+<div>
+  <p>Location: {{ this.weatherData.name }}</p>
+  <p>id: {{ this.weatherData.id }}</p>
+</div>
