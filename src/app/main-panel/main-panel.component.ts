@@ -1,4 +1,6 @@
 import { Component, OnInit } from "@angular/core";
+import { WeatherApiService } from "../weather-api.service";
+import { WeatherData } from "../weatherData";
 
 @Component({
   selector: "app-main-panel",
