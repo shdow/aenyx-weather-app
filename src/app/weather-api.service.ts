@@ -15,7 +15,7 @@ export class WeatherApiService {
 
   getWeatherApi(loc: string): Observable<WeatherData> {
     return this.http.get<WeatherData>(
-      `${this.url}weather?q=${loc}&appid=${this.key}`
+      `${this.url}weather?q=${loc}&units=metric&appid=${this.key}`
     );
   }
 }

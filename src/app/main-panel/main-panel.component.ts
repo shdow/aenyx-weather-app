@@ -8,7 +8,7 @@ import { WeatherData } from "../weatherData";
   styleUrls: ["./main-panel.component.css"],
 })
 export class MainPanelComponent implements OnInit {
-  public location = "London,uk";
+  public location = "Bucharest";
   public weatherData: WeatherData;
   constructor(private weatherApi: WeatherApiService) {}
 

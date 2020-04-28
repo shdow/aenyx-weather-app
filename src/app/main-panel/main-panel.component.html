@@ -4,8 +4,11 @@
   <h2>id -> {{ weatherData?.id }}</h2>
   <h2>description -> {{ weatherData?.description }}</h2>
 </div>
-<p>weather location</p>
+
 <div>
   <p>Location: {{ this.weatherData.name }}</p>
+  <div>
+    <h2>Temperature: {{ this.weatherData.main.temp }}</h2>
+  </div>
   <p>id: {{ this.weatherData.id }}</p>
 </div>
