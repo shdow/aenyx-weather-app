@@ -1,14 +1,14 @@
-<p>main-panel works!</p>
-<div *ngFor="let weatherData of weatherData.weather">
-  <h2>Main -> {{ weatherData?.main }}</h2>
-  <h2>id -> {{ weatherData?.id }}</h2>
-  <h2>description -> {{ weatherData?.description }}</h2>
-</div>
-
-<div>
-  <p>Location: {{ this.weatherData.name }}</p>
-  <div>
-    <h2>Temperature: {{ this.weatherData.main.temp }}</h2>
-  </div>
-  <p>id: {{ this.weatherData.id }}</p>
-</div>
+<nz-card class="fl w-100 ma7">
+  <nz-card-tab>
+    <nz-tabset nzSize="large" [(nzSelectedIndex)]="index1">
+      <nz-tab nzTitle="Today">
+        <div *ngFor="let wData of weatherData.weather">
+          <h1>{{ this.weatherData.main.temp }} &deg;C</h1>
+          <h1 class="ttc">{{ wData?.description }}</h1>
+          <h1>Location: {{ this.weatherData.name }}</h1>
+        </div>
+      </nz-tab>
+      <nz-tab nzTitle="Tomorrow"> test2</nz-tab>
+    </nz-tabset>
+  </nz-card-tab>
+</nz-card>
