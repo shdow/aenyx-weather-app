@@ -4,6 +4,7 @@
       <nz-tab nzTitle="Today">
         <div *ngFor="let wData of weatherData.weather">
           <h1>{{ this.weatherData.main.temp }} &deg;C</h1>
+          <h1>Feels: {{ this.weatherData.main.feels_like }} &deg;C</h1>
           <h1 class="ttc">{{ wData?.description }}</h1>
           <h1>Location: {{ this.weatherData.name }}</h1>
         </div>
